@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="siteApp">
+<head>
+    <title>@Page.Title</title>
+    <!-- angular.js + ui-bootstrap.js + bootstrap.css -->
+    <!-- angular.module('siteApp', ['ui.bootstrap']) -->
+
+    <script type="text/javascript" src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap.min.js"></script>
+
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    @RenderSection("head", required: false)
+</head>
+<body>
+    
+    <div class="container">
+        @RenderBody()
+    </div>
+
+
+    <script src="~/assets/site.js"></script>
+</body>
+</html>

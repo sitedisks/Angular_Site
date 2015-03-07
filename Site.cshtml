@@ -1,8 +1,21 @@
 ﻿@{
     Page.Title = "Title goes here";
-    //Layout = "Your Layout Page goes here";
+    Layout = "~/Share/_Angular_Layout.cshtml";
 }
 
-<div>
-    SitePage
+<div ng-controller="testCtrl">
+   <h2>Angular Page</h2>
+   <div class="row">
+
+       <div class="col-md-4">
+
+           {{message}}
+       </div>
+       <div class="col-md-8">
+
+           content
+       </div>
+   </div>
+ 
+ 
 </div>
